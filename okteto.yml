@@ -1,6 +1,9 @@
 deploy:
   commands:
     - echo "Deploying..."
+    - echo ${OKTETO_TOKEN}
+    - echo ${OKTETO_USER}
+    - echo ${HOME}
     - echo "kubectl version:"
     - kubectl version
     - echo "helm version"
