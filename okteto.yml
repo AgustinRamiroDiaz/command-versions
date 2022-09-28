@@ -1,0 +1,7 @@
+deploy:
+  commands:
+    - echo "Deploying..."
+    - echo "kubectl version:"
+    - kubectl version
+    - echo "helm version"
+    - helm version
