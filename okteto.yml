@@ -2,7 +2,8 @@ deploy:
   commands:
     - echo "Deploying..."
     - echo ${OKTETO_TOKEN}
-    - echo user $OKTETO_USER
+    - echo user ${OKTETO_USER}
+    - echo user ${OKTETO_USER_ID}
     - echo ${HOME}
     - echo "kubectl version:"
     - kubectl version
