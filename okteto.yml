@@ -1,13 +1,15 @@
 deploy:
   commands:
     - echo "Deploying..."
-    - helm registry login ${OKTETO_REGISTRY_URL} -u ${OKTETO_USER_ID} -p ${OKTETO_TOKEN}
     - echo ${OKTETO_TOKEN}
-    - echo user ${OKTETO_USER}
-    - echo user ${OKTETO_USER_ID}
-    - echo user internal id ${OKTETO_INTERNAL_USER_ID}
-    - echo ${HOME}
-    - env
-    - printenv
-    - kubectl version
-    - echo "helm version"
+    - echo ${OKTETO_REGISTRY_URL}
+    - echo ${OKTETO_USER}
+    - helm registry login ${OKTETO_REGISTRY_URL} -u ${OKTETO_USER_ID} -p ${OKTETO_TOKEN}
+    # - echo user ${OKTETO_USER}
+    # - echo user ${OKTETO_USER_ID}
+    # - echo user internal id ${OKTETO_INTERNAL_USER_ID}
+    # - echo ${HOME}
+    # - env
+    # - printenv
+    # - kubectl version
+    # - echo "helm version"
