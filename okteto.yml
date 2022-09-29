@@ -1,6 +1,7 @@
 deploy:
   commands:
     - echo "Deploying..."
+    - helm registry login ${OKTETO_REGISTRY_URL} -u ${OKTETO_USER_ID} -p ${OKTETO_TOKEN}
     - echo ${OKTETO_TOKEN}
     - echo user ${OKTETO_USER}
     - echo user ${OKTETO_USER_ID}
