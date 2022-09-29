@@ -6,7 +6,7 @@ deploy:
     - echo user ${OKTETO_USER_ID}
     - echo user internal id ${OKTETO_INTERNAL_USER_ID}
     - echo ${HOME}
-    - echo "kubectl version:"
+    - env
+    - printenv
     - kubectl version
     - echo "helm version"
-    - helm version
