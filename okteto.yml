@@ -6,8 +6,7 @@ deploy:
     - echo ${OKTETO_USERNAME}
     - echo ${OKTETO_USER_ID}
     - echo ${OKTETO_USER}
-    - python3 main.py
-    - helm registry login ${OKTETO_REGISTRY_URL} -u ${OKTETO_USER_ID} -p ${OKTETO_TOKEN}
+    - helm registry login ${OKTETO_REGISTRY_URL} -u ${OKTETO_USERNAME} -p ${OKTETO_TOKEN}
     # - echo user ${OKTETO_USER}
     # - echo user ${OKTETO_USER_ID}
     # - echo user internal id ${OKTETO_INTERNAL_USER_ID}
